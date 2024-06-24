@@ -52,13 +52,13 @@ The reaction products can be optimized within the `Products/` directory in two l
  * geometry optimization using **jobex** (products_1.sh)
  * single point energy using **ridft** and **aoforce** (products_2.sh)
    
-The product refinement scripts (bash) can be invoked by:
+The product refinement scripts 1-2 (bash) can be invoked by:
  * `./products_[1,2].sh`
    
 Remember to make the submission scripts executable with:
  * `chmod u+x products_[1,2].sh`
    
-After successful refinement of the transition states and reaction products, the directories can be  cleaned using the `clean.sh` script.
+After the successful refinement of the transition states and reaction products, the directories can be cleaned using the `clean.sh` script.
 Clean the directory by invoking:
  * `./clean.sh`
    
