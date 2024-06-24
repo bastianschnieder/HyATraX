@@ -13,6 +13,11 @@ atmospheres. The initial steps are usually hydrogen abstractions from the edge o
 aryl or oxo radicals. These steps usually require considerable amounts of computation time throughout reactive forcefield molecular dynamics 
 simulations. Applying **HyATraX** can skip these initial abstractions by generating reactive intermediates that can be used as input 
 structures for MD simulations that already went through common reaction channels. 
+
+## How does it work?
+
+**HyATraX** generates approximate transition state geometries that are further optimized with trust-region image minimization. It creates a mol object of the given molecule, detects C-H, N-H, and O-H bonds, and subdivides the C-H bonds in aromatic and aldehyde groups. Then, the former R-H bond is elongated to a fixed transition state length before a radical (hydrogen atoms or hydroxyl radicals) is added to the hydrogen atom that is about to be abstracted. The transition state bond lengths and angles were determined empirically for the DFT-D3 TPSS/TZVP method and can be changed in 'main.py'. Before the refinement process, the user can visualize all R-H vectors along with the added radicals.  Moreover, various functional groups, abstraction radicals, and modifications of bond lengths and angles for the transition states can be easily added to the source code.
+
 ## How to use
 
 **HyATrax** requires an input of the Cartesian coordinates (xyz format) for the molecule of interest. The **main
