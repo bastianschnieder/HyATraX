@@ -1,7 +1,6 @@
 #!/bin/bash
 
-for file in product_idx_*.xyz;
-do
+for file in product_idx_*.xyz; do
 	num="${file#product_}"
 	mkdir -p "$num"
 	mv "$file" "$num/"
