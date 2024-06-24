@@ -81,4 +81,4 @@ activation and reaction energies of H-abstraction reactions.
 
 ## Acknowledgments
 The **HyATraX** code uses the [RDKit](https://www.rdkit.org/docs/index.html) package, an open-source cheminformatics software, 
-to detect and analyze R-H bonds in PAHs.  
+to detect R-H bonds in PAHs.  
