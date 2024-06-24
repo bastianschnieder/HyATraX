@@ -1,6 +1,6 @@
 # HyATraX
 ## Description 
-The Hydrogen Abstraction Transition State Explorer (**HyATraX**) is a workflow to find and optimize transition states of initial
+The Hydrogen Abstraction Transition State Explorer (**HyATraX**) is a workflow to find and optimize transition states of
 hydrogen abstraction reactions by hydrogen atoms or hydroxyl radicals from polyaromatic hydrocarbons (PAHs) and is also capable of 
 handling PAHs with heteroatomic functional groups. Presently, **HyATraX** can handle H-abstractions of 
  * C-**H** bonds (aromatic)
