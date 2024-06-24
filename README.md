@@ -68,8 +68,11 @@ activation and reaction energies of H-abstraction reactions.
 ## Requirements
 
 **HyATraX** requires the following Python modules/packages:
- * numpy
+ * [numpy](https://numpy.org/)
+ * [os](https://github.com/python/cpython/blob/3.12/Lib/os.py)
+ * [matplotlib](https://matplotlib.org/)
+ * [rdkit](https://www.rdkit.org/docs/index.html)
  * sys
- * os
- * matplotlib
- * rdkit
+
+## Acknowledgments
+The **HyATraX** code uses the [RDKit](https://www.rdkit.org/docs/index.html) module, an open-source cheminformatics software, to detect and analyze R-H bonds.  
