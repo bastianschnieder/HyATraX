@@ -11,7 +11,7 @@ handling PAHs with heteroatomic functional groups. Presently, **HyATraX** can ha
 that can exist in pyrrole, hydroxyl or aldehyde groups in PAHs. It was developed for studying the combustion of PAHs in radical-rich 
 atmospheres. The initial steps are typically hydrogen abstractions from the edge of the PAHs by hydrogen atoms or hydroxyl radicals that create 
 aryl or oxo radicals. These steps usually require considerable amounts of computation time throughout reactive forcefield molecular dynamics 
-simulations. Applying **HyATraX** can skip these initial abstractions by generating reactive intermediates that can be used as input 
+simulations. Applying **HyATraX** can skip these initial abstractions by generating reactive intermediates as input 
 structures for MD simulations that already went through common reaction channels. 
 
 ## How does it work?
@@ -25,11 +25,11 @@ routine** is invoked by
  * `python3 main_H.py [coord.xyz]` for abstractions by H atoms or
  * `python3 main_OH.py [coord.xyz]` for abstractions by hydroxyl radicals.
    
-Then, the program generates for each R-H bond (R=C,N,O) a respective xyz-file with the [index] of the hydrogen
+The program generates for each R-H bond (R=C,N,O) a respective xyz-file with the [index] of the hydrogen
 atom:
  * coord_hidx_[index].xyz
    
-The user can then refine the transition state guess in three steps using the [TURBOMOLE](https://www.turbomole.org/) program package.
+The user can refine the transition state guess in three steps using the [TURBOMOLE](https://www.turbomole.org/) program package.
  * default: DFT-D3 TPSS/TZVP
    
 If the user decides to change the basis set and functional, the reference values for the bond distances must be
