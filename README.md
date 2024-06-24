@@ -24,7 +24,7 @@ Then, the program generates for each R-H bond (R=C,N,O) a respective xyz-file wi
 atom with index [index]:
  * coord_hidx_[index].xyz
    
-The user can then refine the transition state guess in three steps using the TURBOMOLE program package.
+The user can then refine the transition state guess in three steps using the [TURBOMOLE](https://www.turbomole.org/) program package.
  * default: DFT-D3 TPSS/TZVP
    
 If the user decides to change the basis set and functional, the reference values for the bond distances must be
@@ -61,8 +61,8 @@ Lastly, the single point energies of the transition states and reaction products
 activation and reaction energies of H-abstraction reactions.
 
 ## Adjustments 
- * If your molecule is charged adjust this paramter in rdDetermineBonds.DetermineBonds(mol,charge=[your charge])
- * Change RAM, number of Cores/Nodes and TURBOMOLE paths in the submission scripts appropriately to your local machine or cluster 
+ * If your molecule is charged adjust this parameter in rdDetermineBonds.DetermineBonds(mol,charge=[your charge])
+ * Change RAM, number of Cores/Nodes and [TURBOMOLE](https://www.turbomole.org/) paths in the submission scripts appropriately to your local machine or cluster ([user-guide](https://arc-user-guide.readthedocs.io/en/latest/arc-script-basics.html)) 
  * Check the paths for the input files in the submission scripts as well (default user is "/home/USERNAME")
    
 ## Requirements
