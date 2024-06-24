@@ -1,7 +1,7 @@
 # HyATraX
 ## Description 
 The Hydrogen Abstraction Transition State Explorer (**HyATraX**) is a workflow to find and optimize transition states of initial
-hydrogen abstraction reactions by hydrogen atoms from polyaromatic hydrocarbons (PAHs) and is also capable of 
+hydrogen abstraction reactions by hydrogen atoms or hydroxyl radicals from polyaromatic hydrocarbons (PAHs) and is also capable of 
 handling PAHs with heteroatomic functional groups. Presently, **HyATraX** can handle H-abstractions of 
  * C-**H** bonds (aromatic)
  * C-**H** bonds (aldehyde)
@@ -9,8 +9,7 @@ handling PAHs with heteroatomic functional groups. Presently, **HyATraX** can ha
  * N-**H** bonds
    
 that can be present in pyrrole, hydroxyl or aldehyde groups in PAHs. It was developed for studying the combustion of PAHs in radical-rich 
-atmospheres. At present, the abstraction of hydrogen atoms by hydroxyl radicals is implemented only for pure aromatic C-H bonds.
-The initial steps are usually hydrogen abstractions from the edge of the PAHs by hydrogen atoms or hydroxyl radicals that create 
+atmospheres. The initial steps are usually hydrogen abstractions from the edge of the PAHs by hydrogen atoms or hydroxyl radicals that create 
 aryl or oxo radicals. These steps usually require considerable amounts of computation time throughout reactive forcefield molecular dynamics 
 simulations. Applying **HyATraX** can skip these initial abstractions by generating reactive intermediates that can be used as input 
 structures for MD simulations that already went through common reaction channels. 
