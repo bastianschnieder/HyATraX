@@ -27,6 +27,9 @@ for dir in */; do
         echo "   functional tpss" >> control
         echo "   gridsize   m3" >> control
         echo "   weight derivatives" >> control
+	echo "\$statpt" >> control
+        echo "   itrvec      1" >> control
+	echo "   tradius     3.000000E-02" >> control
         echo "\$end" >> control
         rm define.in
         sbatch -J "$dir" submit.sh
