@@ -25,8 +25,8 @@ routine** is invoked by
  * `python3 main_H.py [coord.xyz]` for abstractions by H atoms or
  * `python3 main_OH.py [coord.xyz]` for abstractions by hydroxyl radicals.
    
-Then, the program generates for each R-H bond (R=C,N,O) a respective xyz-file with the index of the hydrogen
-atom [index]:
+Then, the program generates for each R-H bond (R=C,N,O) a respective xyz-file with the [index] of the hydrogen
+atom:
  * coord_hidx_[index].xyz
    
 The user can then refine the transition state guess in three steps using the [TURBOMOLE](https://www.turbomole.org/) program package.
