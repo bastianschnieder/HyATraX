@@ -9,7 +9,7 @@ handling PAHs with heteroatomic functional groups. Presently, **HyATraX** can ha
  * N-**H** bonds
    
 that can exist in pyrrole, hydroxyl or aldehyde groups in PAHs. It was developed for studying the combustion of PAHs in radical-rich 
-atmospheres. The initial steps are usually hydrogen abstractions from the edge of the PAHs by hydrogen atoms or hydroxyl radicals that create 
+atmospheres. The initial steps are typically hydrogen abstractions from the edge of the PAHs by hydrogen atoms or hydroxyl radicals that create 
 aryl or oxo radicals. These steps usually require considerable amounts of computation time throughout reactive forcefield molecular dynamics 
 simulations. Applying **HyATraX** can skip these initial abstractions by generating reactive intermediates that can be used as input 
 structures for MD simulations that already went through common reaction channels. 
