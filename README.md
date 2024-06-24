@@ -38,16 +38,16 @@ adjusted accordingly.
  * transition state optimization using by **jobex** (submit_level2.sh)
  * verification by calcualting Hessian of optimized transition state using **ridft** and **aoforce** (submit_level3.sh)
    
-Use transition state refinement scripts (bash) are invoked by:
+Transition state refinement scripts 1-3 (bash) are invoked by:
  * `./submit_level[1,2,3].sh`
 
 Remember to make the submission scripts executable with:
  * `chmod u+x submit_level[1,2,3].sh`
 
-In the first refinement step **HyATraX** generates for each detected R-H bond a directory
-named `hidx_[index].xyz` in which the quantum chemical refinement is performed. 
+In the first refinement step, **HyATraX** generates for each detected R-H bond a directory
+named `hidx_[index].xyz` in which the quantum chemical calculations are performed. 
 
-For each abstracted hydrogen atom the reaction product is also saves as `idx_[index].xyz` in `Products/`. 
+For each abstracted hydrogen atom the reaction product is also saved in `Products/` as `idx_[index].xyz`. 
 The reaction products can be optimized within the `Products/` directory in two levels:
  * geometry optimization using **jobex** (products_1.sh)
  * single point energy using **ridft** and **aoforce** (products_2.sh)
