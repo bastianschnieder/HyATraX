@@ -67,7 +67,7 @@ activation and reaction energies of H-abstraction reactions.
 
 ## Adjustments 
  * If your molecule is charged adjust this parameter in rdDetermineBonds.DetermineBonds(mol,charge=[your charge])
- * Change RAM, number of Cores/Nodes and [TURBOMOLE](https://www.turbomole.org/) paths in the submission scripts appropriately to your local machine or cluster ([user-guide](https://arc-user-guide.readthedocs.io/en/latest/arc-script-basics.html)) 
+ * Change RAM, number of Cores/Nodes and [TURBOMOLE](https://www.turbomole.org/) paths in the submission scripts accordingly to your local machine/cluster ([user-guide](https://arc-user-guide.readthedocs.io/en/latest/arc-script-basics.html)) 
  * Check the paths for the input files in the submission scripts as well (default user is "/home/USERNAME")
    
 ## Requirements
