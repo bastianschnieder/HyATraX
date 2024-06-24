@@ -62,8 +62,8 @@ activation and reaction energies of H-abstraction reactions.
 
 ## Adjustments 
  * If your molecule is charged adjust this paramter in rdDetermineBonds.DetermineBonds(mol,charge=[your charge])
- * Set the RAM and Cores in the submission scripts appropriately to your local machine or cluster 
- * Check the paths for the input files in the submission scripts as well and adjust if needed
+ * Set the RAM and Cores/Nodes in the submission scripts appropriately to your local machine or cluster 
+ * Check the paths for the input files in the submission scripts as well (default user is "/home/USERNAME")
    
 ## Requirements
 
