@@ -1,7 +1,6 @@
 #!/bin/bash
 
-for file in coord_hidx_*.xyz;
-do
+for file in coord_hidx_*.xyz; do
 	num="${file#coord_}"
 	mkdir -p "$num"
 	mv "$file" "$num/"
